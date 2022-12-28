@@ -20,7 +20,7 @@ public class Polyservice {
 		Tesla tesla = new Tesla();
 		//자식타입 참조변수 = 자식객체
 		
-		
+	
 		// 업캐스팅 구간
 		Car car2 = new Tesla();
 		//tesla 객체를 참조하는 변수타입이 Car(부모)이기 때문에
@@ -37,22 +37,22 @@ public class Polyservice {
 		 * 
 		 * */
 		
-		//car.setfuel
-		//car.setwheel
+		car.setFuel("60L");
+		car.setWheel(2);
 		// car 메소드(>부모) 모두 사용 가능
 		
 		//1-2) tesla (자식 = 자식)
-		//tesla.setengine
-		//tesla.setfuel
+		tesla.setEngine("6기통");
+		tesla.setFuel("60L");
 		
 		//1-3) car2 ((car)부모 = 자식(tesla))
-		//car2.setengine
+		car2.getEngine();
 		//car2.setbatterycapacity
 		// > car타입에는 setbatterycapacity 메소드가 정의되어있지않다
 		
 		//1-4) car3 ((car)부모 = 자식(tesla)) 
 		//car.setDiscountOffer();
-		// > car 타입에는 setdiscountOffer라는 메소드가 정의됭있지않다
+		// > car 타입에는 setdiscountOffer라는 메소드가 정의되있지않다
 		
 		// 2) 다형성을 이용한 객체 배열
 		// 객체 배열 : 같은(객체 참조) 자료형의 변수를 하나의 묶음으로 다루는것
@@ -302,6 +302,8 @@ public class Polyservice {
 		// - 업캐스팅 상태의 참조변수를 
 		// 별도의 다운캐스팅 없이
 		// 자식의 오버라이딩된 메소드를 수행할 수 있음.
+		
+		
 		
 		
 		
